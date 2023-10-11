@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio de Nina Carducci</title>
+    <meta
+      name="description"
+      content="Portfolio de Nina Carducci : découvrez ses réalisations, tarifs et contactez-la directement."
+    />
+    <!-- Open Graph (OG) meta tags pour Facebook et la plupart des autres plateformes -->
+    <meta property="og:title" content="Portfolio de Nina Carducci" />
+    <meta
+      property="og:description"
+      content="Portfolio de Nina Carducci : découvrez ses réalisations, tarifs et contactez-la directement."
+    />
+    <meta
+      property="og:image"
+      content="https://i.postimg.cc/7LHyx2qk/nina.png"
+    />
+    <meta property="og:url" content="http://127.0.0.1:5500/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Ninacarducci" />
+    <meta name="twitter:title" content="Portfolio de Nina Carducci" />
+    <meta
+      name="twitter:description"
+      content="Portfolio de Nina Carducci : découvrez ses réalisations, tarifs et contactez-la directement."
+    />
+    <meta
+      name="twitter:image"
+      content="https://i.postimg.cc/7LHyx2qk/nina.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://ajax.aspnetcdn.com/ajax/bootstrap/5.2.3/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+
+  <body>
+    <div class="top-header">
+      <h1 class="name">Nina Carducci</h1>
+      <div class="nav">
+        <ul>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#gallery">Galerie</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a
+              class="social-link"
+              href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+              target="_blank"
+              ><img
+                src="assets/images/instagram.avif"
+                alt="Logo instagram"
+                aria-label="Suivez-moi sur instagram, cliquez ici"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="header">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              sizes="(max-width: 1920px) 100vw, 1920px"
+              srcset="
+                ./assets/images/slider/ryoji-iwata_w_190.avif   190w,
+                ./assets/images/slider/ryoji-iwata_w_562.avif   562w,
+                ./assets/images/slider/ryoji-iwata_w_813.avif   813w,
+                ./assets/images/slider/ryoji-iwata_w_978.avif   978w,
+                ./assets/images/slider/ryoji-iwata_w_1247.avif 1247w,
+                ./assets/images/slider/ryoji-iwata_w_1422.avif 1422w,
+                ./assets/images/slider/ryoji-iwata_w_1538.avif 1538w,
+                ./assets/images/slider/ryoji-iwata_w_1650.avif 1650w,
+                ./assets/images/slider/ryoji-iwata_w_1796.avif 1796w,
+                ./assets/images/slider/ryoji-iwata_w_1911.avif 1911w,
+                ./assets/images/slider/ryoji-iwata_w_1920.avif 1920w
+              "
+              src="./assets/images/slider/ryoji-iwata_w_1920.avif"
+              class="d-block w-100"
+              alt="Monsieur en costume traversant un passage piéton, saccoche en cuir à la main droite"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              sizes="(max-width: 1920px) 100vw, 1920px"
+              srcset="
+                ./assets/images/slider/nicholas-green_w_190.avif   190w,
+                ./assets/images/slider/nicholas-green_w_604.avif   604w,
+                ./assets/images/slider/nicholas-green_w_886.avif   886w,
+                ./assets/images/slider/nicholas-green_w_1152.avif 1152w,
+                ./assets/images/slider/nicholas-green_w_1377.avif 1377w,
+                ./assets/images/slider/nicholas-green_w_1559.avif 1559w,
+                ./assets/images/slider/nicholas-green_w_1737.avif 1737w,
+                ./assets/images/slider/nicholas-green_w_1920.avif 1920w
+              "
+              f
+              src="./assets/images/slider/nicholas-green_w_1920.avif"
+              class="d-block w-100"
+              alt="Deux jeunes hommes, un blanc et un noir, mis en évidence au milieu d'une foule lors d'un concert"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              sizes="(max-width: 1920px) 100vw, 1920px"
+              srcset="
+                ./assets/images/slider/edward-cisneros_w_190.avif   190w,
+                ./assets/images/slider/edward-cisneros_w_621.avif   621w,
+                ./assets/images/slider/edward-cisneros_w_896.avif   896w,
+                ./assets/images/slider/edward-cisneros_w_1074.avif 1074w,
+                ./assets/images/slider/edward-cisneros_w_1258.avif 1258w,
+                ./assets/images/slider/edward-cisneros_w_1422.avif 1422w,
+                ./assets/images/slider/edward-cisneros_w_1570.avif 1570w,
+                ./assets/images/slider/edward-cisneros_w_1711.avif 1711w,
+                ./assets/images/slider/edward-cisneros_w_1839.avif 1839w,
+                ./assets/images/slider/edward-cisneros_w_1916.avif 1916w,
+                ./assets/images/slider/edward-cisneros_w_1919.avif 1919w,
+                ./assets/images/slider/edward-cisneros_w_1920.avif 1920w
+              "
+              src="./assets/images/slider/edward-cisneros_w_1920.avif"
+              class="d-block w-100"
+              alt="Jeune couple s'embrassant avec passion lors de leur mariage, entouré d'invités applaudissant"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div id="about">
+      <div class="picture left">
+        <img
+          sizes="(max-width: 578px) 100vw, 578px"
+          srcset="
+            ./assets/images/nina_w_200.avif 200w,
+            ./assets/images/nina_w_270.avif 270w,
+            ./assets/images/nina_w_326.avif 326w,
+            ./assets/images/nina_w_378.avif 378w,
+            ./assets/images/nina_w_418.avif 418w,
+            ./assets/images/nina_w_463.avif 463w,
+            ./assets/images/nina_w_501.avif 501w,
+            ./assets/images/nina_w_578.avif 578w
+          "
+          src="./assets/images/nina_w_578.avif"
+          alt="Portrait de Nina Carducci, jeune femme noire photographe"
+        />
+      </div>
+      <div id="about-me">
+        <h2 class="about-me__title">A propos de moi</h2>
+        <p class="about-me__introduction">
+          Mon parcours pour devenir photographe semblait tracé d'avance. La
+          passion de capturer des moments uniques, des émotions pures et des
+          ambiances particulières est au cœur de mon métier. Mettre en lumière
+          ces instants éphémères pour les rendre éternels, c'est ma véritable
+          vocation.
+        </p>
+        <p>
+          La quête du bonheur est universelle, et quand nous parvenons à le
+          saisir, la photographie devient un moyen privilégié de le conserver et
+          de le partager. Mon engagement en tant que photographe professionnel
+          est de capturer ces précieux instants avec mon expertise, mon style
+          unique et ma sensibilité artistique. En vous offrant des clichés qui
+          évoquent l'amour, la joie, la tendresse et la beauté, mon objectif est
+          de vous permettre de revivre ces moments chaque fois que vous regardez
+          vos photos.
+        </p>
+      </div>
+    </div>
+
+    <div class="container py-3">
+      <div id="gallery">
+        <h2 class="title">Portfolio</h2>
+        <ul>
+          <li class="list active" data-filter="all-items">Tous</li>
+          <li class="list" data-filter="concert">Concert</li>
+          <li class="list" data-filter="entreprises">Entreprises</li>
+          <li class="list" data-filter="mariages">Mariages</li>
+          <li class="list" data-filter="portrait">Portrait</li>
+        </ul>
+
+        <div class="products">
+          <div class="gallery-item concert">
+            <img
+              loading="lazy"
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              srcset="
+                ./assets/images/gallery/concerts/aaron-paul_w_200.avif   200w,
+                ./assets/images/gallery/concerts/aaron-paul_w_330.avif   330w,
+                ./assets/images/gallery/concerts/aaron-paul_w_432.avif   432w,
+                ./assets/images/gallery/concerts/aaron-paul_w_533.avif   533w,
+                ./assets/images/gallery/concerts/aaron-paul_w_622.avif   622w,
+                ./assets/images/gallery/concerts/aaron-paul_w_703.avif   703w,
+                ./assets/images/gallery/concerts/aaron-paul_w_794.avif   794w,
+                ./assets/images/gallery/concerts/aaron-paul_w_879.avif   879w,
+                ./assets/images/gallery/concerts/aaron-paul_w_964.avif   964w,
+                ./assets/images/gallery/concerts/aaron-paul_w_1244.avif 1244w,
+                ./assets/images/gallery/concerts/aaron-paul_w_1326.avif 1326w,
+                ./assets/images/gallery/concerts/aaron-paul_w_1364.avif 1364w,
+                ./assets/images/gallery/concerts/aaron-paul_w_1400.avif 1400w
+              "
+              src="./assets/images/gallery/concerts/aaron-paul_w_1400.avif"
+              data-gallery-tag="Concert"
+              src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.avif"
+              alt="Mains levées lors d'un concert, scène illuminée en rouge, artistes et smartphones visibles"
+            />
+          </div>
+          <div class="gallery-item entreprises">
+            <img
+              loading="lazy"
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              srcset="
+                ./assets/images/gallery/entreprise/ali-morshedlou_w_200.avif   200w,
+                ./assets/images/gallery/entreprise/ali-morshedlou_w_588.avif   588w,
+                ./assets/images/gallery/entreprise/ali-morshedlou_w_869.avif   869w,
+                ./assets/images/gallery/entreprise/ali-morshedlou_w_1011.avif 1011w,
+                ./assets/images/gallery/entreprise/ali-morshedlou_w_1184.avif 1184w,
+                ./assets/images/gallery/entreprise/ali-morshedlou_w_1341.avif 1341w,
+                ./assets/images/gallery/entreprise/ali-morshedlou_w_1400.avif 1400w
+              "
+              src="./assets/images/gallery/entreprise/ali-morshedlou_w_1400.avif"
+              data-gallery-tag="Entreprises"
+              alt="Homme blanc en costume, regard fier, montrant une poignée de porte"
+            />
+          </div>
+          <div class="gallery-item entreprises">
+            <img
+              loading="lazy"
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              srcset="
+                ./assets/images/gallery/entreprise/jason-goodman_w_200.avif   200w,
+                ./assets/images/gallery/entreprise/jason-goodman_w_676.avif   676w,
+                ./assets/images/gallery/entreprise/jason-goodman_w_1060.avif 1060w,
+                ./assets/images/gallery/entreprise/jason-goodman_w_1335.avif 1335w,
+                ./assets/images/gallery/entreprise/jason-goodman_w_1400.avif 1400w
+              "
+              src="./assets/images/gallery/entreprise/jason-goodman_w_1400.avif"
+              data-gallery-tag="Entreprises"
+              alt="Femme souriante en arrière-plan lors d'une conférence professionnelle"
+            />
+          </div>
+          <div class="gallery-item mariages">
+            <img
+              loading="lazy"
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              srcset="
+                ./assets/images/gallery/mariage/hannah-busing_w_200.avif   200w,
+                ./assets/images/gallery/mariage/hannah-busing_w_745.avif   745w,
+                ./assets/images/gallery/mariage/hannah-busing_w_1146.avif 1146w,
+                ./assets/images/gallery/mariage/hannah-busing_w_1400.avif 1400w
+              "
+              src="./assets/images/gallery/mariage/hannah-busing_w_1400.avif"
+              data-gallery-tag="Mariages"
+              alt="Mains de deux personnes sur le point de se tenir, évoquant une cérémonie de mariage"
+            />
+          </div>
+          <div class="gallery-item portrait">
+            <img
+              loading="lazy"
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              srcset="
+                ./assets/images/gallery/portraits/ade-tunji_w_200.avif   200w,
+                ./assets/images/gallery/portraits/ade-tunji_w_425.avif   425w,
+                ./assets/images/gallery/portraits/ade-tunji_w_588.avif   588w,
+                ./assets/images/gallery/portraits/ade-tunji_w_724.avif   724w,
+                ./assets/images/gallery/portraits/ade-tunji_w_850.avif   850w,
+                ./assets/images/gallery/portraits/ade-tunji_w_959.avif   959w,
+                ./assets/images/gallery/portraits/ade-tunji_w_1056.avif 1056w,
+                ./assets/images/gallery/portraits/ade-tunji_w_1159.avif 1159w,
+                ./assets/images/gallery/portraits/ade-tunji_w_1281.avif 1281w,
+                ./assets/images/gallery/portraits/ade-tunji_w_1363.avif 1363w,
+                ./assets/images/gallery/portraits/ade-tunji_w_1395.avif 1395w,
+                ./assets/images/gallery/portraits/ade-tunji_w_1400.avif 1400w
+              "
+              src="./assets/images/gallery/portraits/ade-tunji_w_1400.avif"
+              data-gallery-tag="Portrait"
+              alt="Homme noir les yeux fermés, ayant l'air perdu dans ses pensées"
+            />
+          </div>
+          <div class="gallery-item mariages">
+            <img
+              loading="lazy"
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              srcset="
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_xsj987_c_scale,w_200.avif   200w,
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_xsj987_c_scale,w_416.avif   416w,
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_xsj987_c_scale,w_554.avif   554w,
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_xsj987_c_scale,w_717.avif   717w,
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_xsj987_c_scale,w_792.avif   792w,
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_xsj987_c_scale,w_897.avif   897w,
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_xsj987_c_scale,w_994.avif   994w,
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_xsj987_c_scale,w_1052.avif 1052w,
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_xsj987_c_scale,w_1135.avif 1135w,
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_xsj987_c_scale,w_1206.avif 1206w,
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_xsj987_c_scale,w_1279.avif 1279w,
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_xsj987_c_scale,w_1360.avif 1360w,
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_xsj987_c_scale,w_1399.avif 1399w,
+                ./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_xsj987_c_scale,w_1400.avif 1400w
+              "
+              src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash_xsj987_c_scale,w_1400.avif"
+              data-gallery-tag="Mariages"
+              alt="Jeune couple
+        devant des palmiers, femme en robe de mariée décolletée, homme la
+        regardant amoureusement"
+            />
+          </div>
+          <div class="gallery-item portrait">
+            <img
+              loading="lazy"
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              srcset="
+                ./assets/images/gallery/portraits/nino-van-prattenburg_w_200.avif   200w,
+                ./assets/images/gallery/portraits/nino-van-prattenburg_w_430.avif   430w,
+                ./assets/images/gallery/portraits/nino-van-prattenburg_w_697.avif   697w,
+                ./assets/images/gallery/portraits/nino-van-prattenburg_w_789.avif   789w,
+                ./assets/images/gallery/portraits/nino-van-prattenburg_w_890.avif   890w,
+                ./assets/images/gallery/portraits/nino-van-prattenburg_w_981.avif   981w,
+                ./assets/images/gallery/portraits/nino-van-prattenburg_w_1135.avif 1135w,
+                ./assets/images/gallery/portraits/nino-van-prattenburg_w_1224.avif 1224w,
+                ./assets/images/gallery/portraits/nino-van-prattenburg_w_1312.avif 1312w,
+                ./assets/images/gallery/portraits/nino-van-prattenburg_w_1384.avif 1384w,
+                ./assets/images/gallery/portraits/nino-van-prattenburg_w_1400.avif 1400w
+              "
+              src="./assets/images/gallery/portraits/nino-van-prattenburg_w_1400.avif"
+              data-gallery-tag="Portrait"
+              alt="Jeune femme
+        posant derrière un grillage, portant des lunettes transparentes,
+        regard dirigé vers le bas"
+            />
+          </div>
+          <div class="gallery-item concert">
+            <img
+              loading="lazy"
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              srcset="
+                ./assets/images/gallery/concerts/austin-neill_w_200.avif   200w,
+                ./assets/images/gallery/concerts/austin-neill_w_625.avif   625w,
+                ./assets/images/gallery/concerts/austin-neill_w_827.avif   827w,
+                ./assets/images/gallery/concerts/austin-neill_w_975.avif   975w,
+                ./assets/images/gallery/concerts/austin-neill_w_1400.avif 1400w
+              "
+              data-gallery-tag="Concert"
+              src="./assets/images/gallery/concerts/austin-neill_w_1400.avif"
+              alt="Artiste masculin en concert, fond enfumé avec éclairage blanc et rouge, main levée tenant un micro"
+            />
+          </div>
+          <div class="gallery-item entreprises">
+            <img
+              loading="lazy"
+              sizes="(max-width: 1400px) 100vw, 1400px"
+              srcset="
+                ./assets/images/gallery/entreprise/mateus-campos-felipe_w_200.avif   200w,
+                ./assets/images/gallery/entreprise/mateus-campos-felipe_w_535.avif   535w,
+                ./assets/images/gallery/entreprise/mateus-campos-felipe_w_904.avif   904w,
+                ./assets/images/gallery/entreprise/mateus-campos-felipe_w_1196.avif 1196w,
+                ./assets/images/gallery/entreprise/mateus-campos-felipe_w_1364.avif 1364w,
+                ./assets/images/gallery/entreprise/mateus-campos-felipe_w_1400.avif 1400w
+              "
+              src="./assets/images/gallery/entreprise/mateus-campos-felipe_w_1400.avif"
+              data-gallery-tag="Entreprises"
+              alt="Femme souriante devant son ordinateur portable, tasse à proximité de sa main gauche"
+            />
+          </div>
+        </div>
+        <div class="quote container">
+          <figure>
+            <blockquote>
+              <p class="quote__text">
+                Un portrait n’est pas une ressemblance. Dès lors qu’une émotion
+                ou qu’un fait est traduit en photo, il cesse d’être un fait pour
+                devenir une opinion. L’inexactitude n’existe pas en
+                photographie. Toutes les photos sont exactes. Aucune d’elles
+                n’est la vérité.
+              </p>
+            </blockquote>
+            <figcaption class="quote__author">- Richard Avedon</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <h2 class="title">Mes services</h2>
+      <div class="container">
+        <div class="service">
+          <div class="service__description">
+            <h3>Shooting photo</h3>
+            <p>
+              Pour capturer vos moments les plus précieux et garder un souvenir
+              impérissable. Je me déplace en Île-de-France pour réaliser vos
+              photos
+            </p>
+          </div>
+          <div class="service__price">
+            <h4>350€/demi journée</h4>
+            <span>Matériel, déplacement inclus</span>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service__description">
+            <h3>Retouches</h3>
+            <p>
+              Vous souhaitez retoucher vos photos pour un résultat professionnel
+              ? Bénéficier d’un rendu optimal pour vos publications
+            </p>
+          </div>
+          <div class="service__price">
+            <h4>50€/photo</h4>
+            <span>2 AR par photo</span>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service__description">
+            <h3>Album photos</h3>
+            <p>
+              Partagez avec vos proches et vos clients les photos des moments
+              partagés ensemble à travers un album photo personnalisé
+            </p>
+          </div>
+          <div class="service__price">
+            <h4>400€ album A4</h4>
+            <span>30 pages recto/verso</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="quote container">
+      <figure>
+        <blockquote>
+          <p class="quote__text">
+            De manière inconsciente, je crois, je guette un regard, une
+            expression, des traits ou une nostalgie capable de résumer ou plus
+            exactement de révéler une vie
+          </p>
+        </blockquote>
+        <figcaption class="quote__author">- Richard Avedon</figcaption>
+      </figure>
+    </div>
+    <div id="contact">
+      <div class="container">
+        <div class="form-container">
+          <h3>Une question ? Une demande de devis ?</h3>
+          <p>
+            N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
+          </p>
+          <form action="" method="post">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input type="submit" value="Envoyer" />
+          </form>
+        </div>
+        <div class="picture right">
+          <img
+            loading="lazy"
+            sizes="(max-width: 550px) 100vw, 550px"
+            srcset="
+              ./assets/images/camera_w_190.avif 190w,
+              ./assets/images/camera_w_346.avif 346w,
+              ./assets/images/camera_w_465.avif 465w,
+              ./assets/images/camera_w_550.avif 550w
+            "
+            src="./assets/images/camera_w_550.avif"
+            alt="Appareil photo en gros plan"
+          />
+        </div>
+      </div>
+    </div>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Nina Carducci",
+        "image": "https://i.postimg.cc/7LHyx2qk/nina.png",
+        "description": "Portfolio de Nina Carducci : découvrez ses réalisations, tarifs et contactez-la directement.",
+        "areaServed": ["France, FR"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "postalCode": "33200",
+          "addressLocality": "Bordeaux",
+          "addressCountry": "France"
+        },
+        "telephone": "0556677889",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "10:00",
+            "closes": "19:00"
+          }
+        ]
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="./assets/gallery.js"></script>
+  </body>
+</html>
