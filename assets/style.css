@@ -426,7 +426,7 @@ input[type="submit"] {
 .fullscreen-background {
   display: none;
   position: fixed;
-  background-color: #8383835d;
+  background-color: #5a5a5a8c;
   top: 0;
   left: 0;
   width: 100%;
@@ -440,6 +440,17 @@ input[type="submit"] {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+@media (min-width: 576px) {
+  .fullscreen-container {
+    width: 100%;
+    max-width: 500px;
+  }
 }
 
 .fullscreen-container > img {
@@ -458,21 +469,14 @@ input[type="submit"] {
 }
 
 #prev-button {
-  position: absolute;
-  top: 50%;
-  left: -20px;
-  transform: translateY(-50%);
+  position: relative;
+  height: fit-content;
+  left: 1px;
 }
 
 #next-button {
-  position: absolute;
-  top: 50%;
-  right: -20px;
-  transform: translateY(-50%);
-}
+  position: relative;
+  height: fit-content;
 
-#close-button {
-  position: absolute;
-  top: 1px;
-  right: 0;
+  right: 1px;
 }
