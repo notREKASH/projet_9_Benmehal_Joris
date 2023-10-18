@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const imgSrc = thumbnail.src;
 
       fullscreenImage.src = imgSrc;
+      fullscreenImage.alt = thumbnail.alt;
       fullscreenContainer.style.display = "block";
       currentIndex = index;
     });
